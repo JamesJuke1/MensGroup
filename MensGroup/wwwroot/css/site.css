@@ -1,0 +1,158 @@
+.bridge-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top-nav {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px solid #d4af37;
+}
+
+.split-view {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.panel {
+    flex: 1;
+    padding: 50px 25px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.side-a {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.side-b {
+    background: #f8f9fa;
+    color: #2c3e50;
+}
+
+.btn {
+    background: #d4af37;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Button Glow Effect */
+.btn-hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+/* Schedule Section */
+
+.schedule-area {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gold-line {
+    border: 1px solid #d4af37;
+    width: 50px;
+    margin: 15px auto;
+}
+
+.time-card {
+    border: 1px solid #444;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.day {
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.time {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.loc {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Hero Image Settings */
+.hero-image {
+    background: url('../images/mainBGImage.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* Darken image for readability */
+.hero-overlay {
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slogan Styling */
+.slogan-box {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px #000;
+}
+
+    .slogan-box h3 {
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+        margin: 0;
+        opacity: 0.9;
+    }
+
+.center-glow h2 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 900;
+    /* Visual Glow Effect */
+    text-shadow: 0 0 20px #d4af37;
+}
+
+/* Footer of the Hero */
+.scroll-prompt {
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+
+@media (min-width: 768px) {
+    .split-view {
+        flex-direction: row;
+    }
+}
